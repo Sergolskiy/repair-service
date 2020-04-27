@@ -1,0 +1,23 @@
+<div class="b-obs-recommend">
+					<div class="b-obs-recommend-title">
+						Рекомендуем добавить в заказ
+					</div>
+					<div class="b-obs-recommend-slider">
+						<div class="b-item product_wrapper">
+							<div class="b-pic">
+								<span>
+									<a target="_blank" href="/products/apc-back-ups-1100va-bx1100ci-rs/" tabindex="-1">
+										<img src="https://img.telemart.ua/38502-115749-cart_medium/apc-back-ups-1100va-bx1100ci-rs.jpg" width="100" height="100" alt="APC Back-UPS 1100VA (BX1100CI-RS)">
+									</a>
+								</span>
+							</div>
+							<div class="b-name">
+								<a target="_blank" href="/products/apc-back-ups-1100va-bx1100ci-rs/" tabindex="-1">APC Back-UPS 1100VA (BX1100CI-RS)</a>
+							</div>
+							<div class="b-meta">
+								<div class="b-price">6 328 <i>грн</i></div>
+							</div>
+							<a class="b-btn-add" href="javascript: void(0);" tabindex="-1">Добавить</a>
+						</div>
+					</div>
+				</div>

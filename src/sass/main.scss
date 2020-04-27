@@ -1,0 +1,101 @@
+@import "media.scss";
+
+$black: #011627;
+$blacklight: #656073;
+
+* {
+  box-sizing: border-box;
+}
+
+textarea,
+input,
+a,
+a:focus,
+a:active,
+a:hover{
+  text-decoration: none;
+  outline: 0;
+}
+
+button{
+  outline: 0;
+}
+
+* {
+  font-family: 'Roboto';
+  color: #515153;
+}
+
+
+.header{
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100px;
+  }
+
+  &__logo{
+
+  }
+
+  &__menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__menu-item{
+    margin-right: 30px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__menu-link{
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    &:hover{
+      color: #e30615;
+    }
+  }
+
+  &__info{
+    margin-right: 30px;
+  }
+
+  &__info-name{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  &__info-txt{
+    color: #919191;
+    font-size: 15px;
+
+    a{
+      color: #919191;
+    }
+  }
+
+  &__callme{
+    background: url("../img/header-btn.jpg") center center no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+  }
+}
+
+
+
