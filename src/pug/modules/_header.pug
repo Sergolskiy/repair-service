@@ -12,6 +12,8 @@ header.header
         a.header__menu-link(href="#") Новости
       li.header__menu-item
         a.header__menu-link(href="#") Контакты
+      li.header__menu-item
+        a.header__menu-link.mobile(href="#") Войти
 
     .header__info
       .header__info-name.header__info-name--schedule График работы
@@ -22,7 +24,20 @@ header.header
       .header__info-txt
         a(href="tel:+380671234567") +38(067) 123 45 67
 
-    a(href="#").header__callme Перезвонить мне
+    .header__callme-wrap
+      .header__callme-wrap-top
+        a(href="#").header__callme Перезвонить мне
+      .header__callme-wrap-bottom
+        a(href="#").header__login Войти
+
+
+    a(href="#").header__cart
+      include ../../img/cart.svg
+      .header__cart-count
+        span 1
+
+    a(href="#").header__menu-btn
+
 
 
 

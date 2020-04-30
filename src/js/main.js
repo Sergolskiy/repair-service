@@ -1,9 +1,76 @@
-$(document).ready(function{
+$(document).ready(function(){
 
     $('.home-slider').owlCarousel({
       items: 1,
       nav: true,
       dots: true,
+    });
+
+    $('.home-reviews__slider').owlCarousel({
+      items: 2,
+      nav: false,
+      dots: true,
+      margin: 30,
+
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            770 : {
+                items: 2,
+            },
+        }
+    });
+
+    $('.home-certificate__slider').owlCarousel({
+      items: 4,
+      nav: false,
+      dots: true,
+      margin: 30,
+
+
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2,
+            },
+            // breakpoint from 480 up
+            600 : {
+                items: 4,
+            },
+        }
+    });
+
+    $('.home-partners__slider').owlCarousel({
+      items: 6,
+      nav: false,
+      dots: false,
+
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2,
+            },
+            // breakpoint from 480 up
+            649 : {
+                items: 3,
+            },
+            768 : {
+                items: 4,
+            },
+            991 : {
+                items: 5,
+            },
+            1200 : {
+                items: 6,
+            }
+        }
+    });
+
+    $('.header__menu-btn').click(function () {
+         $('.header__menu').toggleClass('open');
     });
 
 });

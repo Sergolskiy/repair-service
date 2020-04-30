@@ -1,0 +1,265 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Home page";
+  - var pageClass = "homepage loadpage";
+  - var pageActive = "homepage";
+
+block content
+  //.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+    <picture>
+      <source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+      <source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+      <img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
+    </picture>
+
+  div.main-wrap
+    .page-bunner
+      img(src="img/s-bunner.jpg")
+      .page-bunner__content
+        .page-bunner__title выездной ремонт и техническое лбслуживание
+        .page-bunner__caption котлов, колонок, бойлеров и кондицеонеров в измаилу и пригороде
+        a(href="#").page-bunner__btn  вызвать мастера
+
+    .home-problem.home-problem--service
+      .block-wrap
+        .home-problem__title.site-title Переложите свои проблемы
+        .home-problem__items
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic1.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic2.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic3.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic1.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic2.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+          .home-problem__item
+            .home-problem__img
+              img(src="img/ic3.jpg")
+            .home-problem__item-title 12 лет
+            .home-problem__item-txt Lorem Ipsum - это текст-"рыба"
+
+
+    .table-price
+      .block-wrap
+        .table-price__title.site-title прайс лист
+        .table-price__table
+          table
+            thead
+              tr
+                th № п/п
+                th(colspan='2') Перечень услуг
+                th Стоимость, грн
+            tbody
+              tr
+                td 1
+                td Lorem Ipsum - это
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+              tr
+                td 2
+                td Lorem Ipsum - это Lorem Ipsum
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+                  div 100
+                  div 200
+                  div 300
+                  div 400
+              tr.full
+                td(colspan="4")
+                  a(href="#") Ремонт работы
+              tr
+                td 1
+                td(colspan="2") Диагностика
+                td 140
+              tr
+                td 2
+                td Lorem Ipsum - это Lorem Ipsum
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+                  div 100
+                  div 200
+                  div 300
+                  div 400
+              tr
+                td 2
+                td Lorem Ipsum - это Lorem Ipsum
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+                  div 100
+              tr
+                td 2
+                td Lorem Ipsum - это Lorem Ipsum
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+                  div 100
+              tr
+                td 2
+                td Lorem Ipsum - это Lorem Ipsum
+                td
+                  div Lorem Ipsum
+                  div Lorem Ipsum - это текст-"рыба"
+                  div Lorem Ipsum - это текст-"рыба"
+                td
+                  div 40
+                  div 7,5
+                  div 100
+              tr
+                td 1
+                td(colspan="2") Диагностика
+                td 140
+              tr
+                td 1
+                td(colspan="2") Диагностика
+                td 140
+
+
+
+    .service__procedure
+      .block-wrap
+        .table-price__title.site-title Порядок оказания услуги
+        .service__procedure-top
+          .service__procedure-top-item
+            span 1
+          .service__procedure-top-item
+            span 2
+          .service__procedure-top-item
+            span 3
+          .service__procedure-top-item
+            span 4
+        .service__procedure-bottom
+          .service__procedure-bottom-item
+            img(src="img/s-servise.png")
+            span Первая ступень
+          .service__procedure-bottom-item
+            img(src="img/s-servise.png")
+            span Первая ступень
+          .service__procedure-bottom-item
+            img(src="img/s-servise.png")
+            span Первая ступень
+          .service__procedure-bottom-item
+            img(src="img/s-servise.png")
+            span Первая ступень
+        .service__procedure-btn
+          a(href="#") Узнать стоимость ремонта
+
+
+    .service__bunner2
+      .service__bunner2-title
+      .service__bunner2-caption
+      .service__bunner2-txt
+
+    .home-how-we.home-how-we--service
+      .block-wrap
+        .home-how-we__title.site-title Почкму все выбирают нас?
+        .home-how-we__subtitle Мы решаем ваши проблемы с гарантией результата!
+        .home-how-we__items
+          .home-how-we__item
+            a(href="#")
+              .home-how-we__item-img
+                img(src="img/s-muster.png")
+              .home-how-we__item-title 24/7
+              .home-how-we__item-txt
+                div Lorem Ipsum - это текст-"рыба"
+                div часто используемый в печати
+              .home-how-we__item-btn
+                a(href="#") Сертификат
+          .home-how-we__item
+            a(href="#")
+              .home-how-we__item-img
+                img(src="img/s-muster.png")
+              .home-how-we__item-title Вовремя
+              .home-how-we__item-txt
+                div Lorem Ipsum - это текст-"рыба"
+                div часто используемый в печати
+              .home-how-we__item-btn
+                a(href="#") Сертификат
+          .home-how-we__item
+            a(href="#")
+              .home-how-we__item-img
+                img(src="img/s-muster.png")
+              .home-how-we__item-title Быстро
+              .home-how-we__item-txt
+                div Lorem Ipsum - это текст-"рыба"
+                div часто используемый в печати
+              .home-how-we__item-btn
+                a(href="#") Сертификат
+
+
+    .service__bunner3
+      .block-wrap
+        .service__bunner3-item Lorem Ipsum - это текст-"рыба"
+        .service__bunner3-item Lorem Ipsum - это текст-"рыба"
+        .service__bunner3-item Lorem Ipsum - это текст-"рыба"
+        .service__bunner3-item Lorem Ipsum - это текст-"рыба"
+        .service__bunner3-item Lorem Ipsum - это текст-"рыба"
+
+
+    .site-form
+      .block-wrap
+        .site-form__title
+        .site-form__subtitle
+        .site-form__form
+          form
+            input(type="text")
+            input(type="text")
+            a(href="#")
+
+        .site-form__numbers
+          .site-form__number
+            a(href="#") +38 (067) 123 45 67
+              span Звоните нам
+          .site-form__number
+            a(href="#") +38 (067) 123 45 67
+              span Звоните нам
+
+
+
