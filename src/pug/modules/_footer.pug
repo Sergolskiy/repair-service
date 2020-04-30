@@ -2,3 +2,17 @@ footer.footer
 	.footer__inner
 		.footer__txt Copirate 2020
 
+.popup.callme-popup
+	.popup__inner
+		.popup__close +
+		.popup__content
+			.site-title.site-title--white.popup__title Позвонить мне
+			.callme-from
+				form
+					.callme-from__row
+						input.custom-input(type="text" name="name" placeholder="Ваше имя")
+					.callme-from__row
+						input.custom-input.phonemask(type="text" name="phone" placeholder="Ваш телефон")
+					a(href="javascript:void(0)").droplet-btn.contact-info__btn
+						span Отправить
+

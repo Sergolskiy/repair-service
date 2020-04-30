@@ -73,6 +73,30 @@ $(document).ready(function(){
          $('.header__menu').toggleClass('open');
     });
 
+
+  $(document).on('click', '.popup__close', function (e) {
+    $('.popup ').removeClass('open');
+    $('body').removeClass('overHid');
+  });
+
+  $(document).on('click', '.popup', function (e) {
+    if(e.target.classList[0] == "popup") {
+      $('.popup ').removeClass('open');
+      $('body').removeClass('overHid');
+    }
+  });
+
+  $(document).on('click', '#callmeJs', function (e) {
+    e.preventDefault();
+    console.log(123);
+    $('.callme-popup').addClass('open');
+    $('body').addClass('overHid');
+  });
+
+
+
+  $('.phonemask').inputmask({"mask": "+38 (999) 999 9999"}); //specifying options
+
 });
 
 
